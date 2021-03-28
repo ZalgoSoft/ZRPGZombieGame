@@ -1,1 +1,1 @@
-![Alt text](preview.gif) / ![](preview.gif)
+![Alt text](preview.gif)
