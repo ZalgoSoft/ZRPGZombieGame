@@ -12,8 +12,10 @@ public class BaseWeaponController : MonoBehaviour, IWeaponControllerInterface
     public GameObject projectile;
     void Start()
     {
+#if UNITY_EDITOR
         if (projectile == null)
             EditorUtility.DisplayDialog("Error", "Select Projectile type", "Ok");
+#endif
     }
     void Update()
     {

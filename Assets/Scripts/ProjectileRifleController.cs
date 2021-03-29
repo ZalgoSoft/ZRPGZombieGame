@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 public interface IProjectileControllerInterface
 {
 }
@@ -27,18 +25,19 @@ public class ProjectileRifleController : MonoBehaviour, IProjectileControllerInt
         if (!TryGetComponent<Collider>(out Collider collider))
             collider = gameObject.AddComponent<Collider>();
         collider.isTrigger = true;
-        explosionSphere = new GameObject("explcir", typeof(ExplosionSphere));
+        //explosionSphere = new GameObject("explcir", typeof(ExplosionSphere));
         projectileLight = new GameObject("bulletLight", typeof(Light));
 
         lightComponent = projectileLight.GetComponent<Light>();
         lightComponent.type = LightType.Point;
         lightComponent.intensity = 1f;
+        //lightComponent.lightmapBakeType=LightmapBakeType.Mixed;
         lightComponent.enabled = true;
         projectileLight.transform.parent = gameObject.transform;
         projectileLight.transform.localPosition = Vector3.zero;
 
-        explosionSphere.transform.parent = gameObject.transform;
-        explosionSphere.transform.localPosition = Vector3.zero;
+       // explosionSphere.transform.parent = gameObject.transform;
+       // explosionSphere.transform.localPosition = Vector3.zero;
 
         Destroy(gameObject, TimeToLive);
     }

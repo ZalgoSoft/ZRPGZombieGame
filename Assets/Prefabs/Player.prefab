@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 705544146}
   - component: {fileID: 705544147}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Spot Light
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25,7 +25,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 705544145}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 3, z: 0}
+  m_LocalPosition: {x: 0, y: 1.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2766637205460348359}
@@ -44,7 +44,7 @@ Light:
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 5
-  m_Range: 5
+  m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -85,7 +85,7 @@ Light:
   m_Lightmapping: 1
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
-  m_BounceIntensity: 1
+  m_BounceIntensity: 2
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
   m_BoundingSphereOverride: {x: 0, y: 0, z: 9.1837e-41, w: -3.38e-43}
@@ -102,9 +102,9 @@ GameObject:
   m_Component:
   - component: {fileID: 8101883975304606211}
   - component: {fileID: 1316811827697092727}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Point Light
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -117,7 +117,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1713696356666213827}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 1.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2766637205460348359}
@@ -135,9 +135,9 @@ Light:
   m_Type: 0
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 1
+  m_Intensity: 5
   m_Range: 50
-  m_SpotAngle: 60
+  m_SpotAngle: 90
   m_InnerSpotAngle: 6
   m_CookieSize: 10
   m_Shadows:
@@ -177,7 +177,7 @@ Light:
   m_Lightmapping: 1
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
-  m_BounceIntensity: 1
+  m_BounceIntensity: 2
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
   m_BoundingSphereOverride: {x: 2.387723e-39, y: 2.75529e-40, z: 4.591775e-39, w: 1.656626e-39}
@@ -195,9 +195,9 @@ GameObject:
   - component: {fileID: 4626264896607791243}
   - component: {fileID: 7345872207195411556}
   - component: {fileID: 7924921265638767139}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: FPScamera
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -279,9 +279,9 @@ GameObject:
   - component: {fileID: 2766637205147078264}
   - component: {fileID: 2766637205147078265}
   - component: {fileID: 2766637205147078214}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Gun
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 2
   m_StaticEditorFlags: 0
@@ -372,9 +372,9 @@ GameObject:
   - component: {fileID: 2766637205239385053}
   - component: {fileID: 2766637205239385050}
   - component: {fileID: 2766637205239385051}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Body
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 2
   m_StaticEditorFlags: 0
@@ -468,9 +468,9 @@ GameObject:
   - component: {fileID: 7546184500421822673}
   - component: {fileID: 304784253380591524}
   - component: {fileID: 7204063472270204649}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Player
-  m_TagString: Level
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -526,7 +526,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!143 &2766637205460348408
@@ -604,9 +604,9 @@ GameObject:
   - component: {fileID: 7498721246963474791}
   - component: {fileID: 1535617931462586035}
   - component: {fileID: 976002129327622540}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: crossHair
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 1

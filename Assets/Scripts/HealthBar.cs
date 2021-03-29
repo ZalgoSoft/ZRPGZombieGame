@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 public class HealthBar : MonoBehaviour
 {
     public float maxHealth = 10;
@@ -16,9 +14,10 @@ public class HealthBar : MonoBehaviour
         curHealth = maxHealth;
         healthBar.transform.localScale = Vector3.zero;
     }
-    void FixedUpdate()
+    void LateUpdate()
     {
-        healthBar.transform.forward = -Camera.main.transform.forward;
+        if (curHealth < maxHealth)
+            healthBar.transform.forward = -Camera.main.transform.forward;
     }
     public void AddjustCurrentHealth(float current, float maximum)
     {

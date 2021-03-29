@@ -24,6 +24,7 @@ public class PlayerController : MonoBehaviour
     {
         if (!TryGetComponent<Rigidbody>(out Rigidbody rigidBody))
             rigidBody = gameObject.AddComponent<Rigidbody>();
+        rigidBody.collisionDetectionMode = CollisionDetectionMode.ContinuousSpeculative;
         rigidBody.isKinematic = true;
         rigidBody.useGravity = false;
         if (!TryGetComponent<CharacterController>(out controller))
